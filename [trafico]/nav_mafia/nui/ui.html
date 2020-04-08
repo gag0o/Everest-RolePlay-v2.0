@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="actionmenu">
+		<div id="mainmenu">
+			<button class="menuoption" id="armamentos" data-sub="armamentos-comprar">Munições</button>
+			<button class="menuoption" data-action="fechar">Fechar</button>
+		</div>
+
+		<div data-parent="mainmenu" id="armamentos-comprar" style="display: none;">
+			<button class="menuoption" data-action="wammo|WEAPON_PISTOL_MK2">
+				<l>FN Five Seven</l>
+				<r>
+					35x Minério de Ferro<br>
+					20x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wammo|WEAPON_ASSAULTSMG">
+				<l>MTAR-21</l>
+				<r>
+					45x Minério de Ferro<br>
+					28x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wammo|WEAPON_ASSAULTRIFLE">
+				<l>AK-47</l>
+				<r>
+					40x Minério de Ferro<br>
+					25x Tora<br>
+				</r>
+			</button>
+			<button class="menuoption" data-action="wammo|WEAPON_SPECIALCARBINE">
+				<l>Carabina G36</l>
+				<r>
+					45x Minério de Ferro<br>
+					28x Tora<br>
+				</r>
+			</button>
+
+		</div>
+	</div>
+	<script src="ui.js" type="text/javascript"></script>
+</body>
+
+</html>

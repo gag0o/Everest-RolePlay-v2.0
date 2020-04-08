@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="actionmenu">
+			<div id="mainmenu">
+				<button class="menuoption" data-sub="prefeitura">Prefeitura</button>
+				<button class="menuoption" data-sub="legais">Grupos Legais</button>
+				<button class="menuoption" data-sub="ilegais">Grupos Ilegais</button>
+				<button class="menuoption" data-action="desconectar">Desconectar</button>
+				<button class="menuoption" data-action="fechar">Fechar</button>
+			</div>
+
+			<div data-parent="mainmenu" id="prefeitura" style="display: none;">
+				<button class="menuoption" data-action="moderador">Administração</button>
+				<button class="menuoption" data-action="policia">Polícia</button>
+				<button class="menuoption" data-action="policia2">Polícia 02</button>
+				<button class="menuoption" data-action="paramedico">Paramédicos</button>
+			</div>
+
+			<div data-parent="mainmenu" id="legais" style="display: none;">
+				<button class="menuoption" data-action="mecanico">Mecânicos</button>
+			<!--<button class="menuoption" data-action="vanilla">Vanilla</button>-->
+				<button class="menuoption" data-action="bennys">Bennys</button>
+			<!--<button class="menuoption" data-action="Bloods">Bahamas</button>-->
+				<button class="menuoption" data-action="juridico">Juridico</button>
+			</div>
+
+			<div data-parent="mainmenu" id="ilegais" style="display: none;">
+				<button class="menuoption" data-action="Motoclub">Motoclub</button>
+				<button class="menuoption" data-action="Motoclub2">Motoclub 02</button>
+				<button class="menuoption" data-action="Mafia">Mafia</button>
+				<button class="menuoption" data-action="Mafia02">Mafia 02</button>
+				<button class="menuoption" data-action="Vagos">Vagos</button>
+				<button class="menuoption" data-action="Ballas">Ballas</button>
+				<button class="menuoption" data-action="Groove">Groove</button>
+				<!--<button class="menuoption" data-action="Crips">Crips</button>
+				<button class="menuoption" data-action="Bloods">Bloods</button>
+				<button class="menuoption" data-action="Liberty">Liberty</button>-->
+			</div>
+		</div>
+		<script src="ui.js" type="text/javascript"></script>
+	</body>
+</html>
+				<!--<button class="menuoption" data-action="admin">Administração</button>
+				<button class="menuoption" data-action="policia">Polícia</button>
+				<button class="menuoption" data-action="paramedico">Paramédicos</button>
+				<button class="menuoption" data-action="mecanico">Mecânicos</button>
+				<button class="menuoption" data-action="concessionaria">Concessionaria</button>
+				<button class="menuoption" data-action="caminhoneiros">Caminhoneiros</button>
+				<button class="menuoption" data-action="juridico">Juridico</button>
+
+				<button class="menuoption" data-action="motoclub">Motoclub</button>
+				<button class="menuoption" data-action="motoclub2">Motoclub2</button>
+				<button class="menuoption" data-action="mafia">Mafia</button>
+				<button class="menuoption" data-action="mafia2">Mafia2</button>
+				<button class="menuoption" data-action="yakuza">Yakuza</button>
+				<button class="menuoption" data-action="vagos">Vagos</button>
+				<button class="menuoption" data-action="groove">Groove</button>
+				<button class="menuoption" data-action="ballas">Ballas</button>
+				<button class="menuoption" data-action="corredor">Corredor</button>
+				<button class="menuoption" data-action="desconectar">Desconectar</button>
+				<button class="menuoption" data-action="fechar">Fechar</button>-->
