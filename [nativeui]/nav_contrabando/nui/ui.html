@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="actionmenu">
+			<div id="mainmenu">
+				<button class="menuoption" data-sub="utilidades-comprar">Comprar</button>
+				<button class="menuoption" data-sub="utilidades-vender">Vender</button>
+				<button class="menuoption" data-action="fechar">Fechar</button>
+			</div>
+
+			<div data-parent="mainmenu" id="utilidades-comprar" style="display: none;">
+			
+				<button class="menuoption" data-action="utilidades-comprar-pendrive"><l>Pendrive</l><r>$25.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-chavemestra"><l>ChaveMestra</l><r>$6.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-placa"><l>Placa</l><r>$7.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-rubberducky"><l>Rubberducky</l><r>$10.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-c4flare"><l>C4 Flare</l><r>$50.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-serra"><l>Serra Elétrica</l><r>$20.000</r></button>
+				<button class="menuoption" data-action="utilidades-comprar-furadeira"><l>Furadeira</l><r>$15.000</r></button>	
+				<button class="menuoption" data-action="utilidades-comprar-keylogs"><l>Key Logs</l><r>$50.000</r></button>	
+			</div>
+			<div data-parent="mainmenu" id="utilidades-vender" style="display: none;">
+				<button class="menuoption" data-action="utilidades-vender-chavemestra"><l>ChaveMestra</l><r>$3.500</r></button>
+				<button class="menuoption" data-action="utilidades-vender-pendrive"><l>Pendrive</l><r>$25.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-placa"><l>Placa</l><r>$2.500</r></button>
+				<button class="menuoption" data-action="utilidades-vender-rubberducky"><l>Rubberducky</l><r>$5.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-c4flare"><l>C4 Flare</l><r>$25.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-serra"><l>Serra Elétrica</l><r>$10.000</r></button>
+				<button class="menuoption" data-action="utilidades-vender-furadeira"><l>Furadeira</l><r>$3.750</r></button>
+				<button class="menuoption" data-action="utilidades-vender-keylogs"><l>Key Logs</l><r>$25.000</r></button>
+			</div>
+		</div>
+		<script src="ui.js" type="text/javascript"></script>
+	</body>
+</html>

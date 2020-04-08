@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VRP_ROUPAS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="notify" style="display: none;">
+        <p>Tem certeza que deseja cancelar sua compra no valor de $<span class="totalReturn">0</span> ?</p>
+        <button id="confirmar">Sim</button>
+        <button id="cancelar">Não</button>
+    </div>
+    <div class="loja-de-roupa" style="display: none;" >
+        <div class="shadow"></div>
+        <div class="shadow2"></div>
+        <h1>Valor $: <span class="total">0</span></h1>
+        <div class="container-roupas">
+        <div class="item" data-id="acessiorios" onclick="select(this)">
+            <div class="icon">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="info">
+                <span>Acessorios</span>
+            </div>
+        </div>
+        <div class="item" data-id="mascara" onclick="select(this)">
+            <div class="icon">
+                <i class="fas fa-theater-masks"></i>
+            </div>
+            <div class="info">
+                <span>Mascaras<s/span>
+            </div>
+        </div>
+        <div class="item" data-id="orelha" onclick="select(this)">
+            <div class="icon">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="info">
+                <span>Orelha</span>
+            </div>
+        </div>
+            <div class="item" data-id="camisa" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="info">
+                    <span>Camisas</span>
+                </div>
+            </div>
+            <div class="item" data-id="jaqueta" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="info">
+                    <span>Blusas</span>
+                </div>
+            </div>
+            <div class="item" data-id="calca" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-dungeon"></i>
+                </div>
+                <div class="info">
+                    <span>Calças</span>
+                </div>
+            </div>
+            <div class="item" data-id="mochila" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-hiking"></i>
+                </div>
+                <div class="info">
+                    <span>Mochila<s/span>
+                </div>
+            </div>
+            <div class="item" data-id="colete" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-socks"></i>
+                </div>
+                <div class="info">
+                    <span>Colete</span>
+                </div>
+            </div>
+            <div class="item" data-id="sapato" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-shoe-prints"></i>
+                </div>
+                <div class="info">
+                    <span>Sapatos</span>
+                </div>
+            </div>
+            <div class="item" data-id="oculos" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-glasses"></i>
+                </div>
+                <div class="info">
+                    <span>Oculos</span>
+                </div>
+            </div>
+            <div class="item" data-id="relogio" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <div class="info">
+                    <span>Relogio</span>
+                </div>
+            </div>
+            <div class="item" data-id="pulseira" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <div class="info">
+                    <span>Pulseiras</span>
+                </div>
+            </div>
+            <div class="item" data-id="bone" onclick="select(this)">
+                <div class="icon">
+                    <i class="fab fa-redhat"></i>
+                </div>
+                <div class="info">
+                    <span>Chapeus</span>
+                </div>
+            </div>
+            <div class="item" data-id="mao" onclick="select(this)">
+                <div class="icon">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <div class="info">
+                    <span>Mãos</span>
+                </div>
+            </div>
+            <div class="item" id="right">
+                <div class="icon">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <div class="info">
+                    <span>Girar</span>
+                </div>
+            </div>
+        </div>
+        <div align ="right">
+        <div class="actions">
+            <button class="btn1" disabled>Anterior</button>
+            <button class="btn2" disabled>Próximo</button><br>
+            <button class="btncor" disabled>Trocar Cor</button>
+            <button class="comprar" disabled>Finalizar</button>
+        </div>
+    </div>
+    <script src="ui.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

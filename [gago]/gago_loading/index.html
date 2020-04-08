@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Title-->
+	<title>Everest Loading Screen</title>
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">	
+	<!--General Style-->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+		</head>
+	<body>
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+	</div>
+	<!--Pree Loading -->
+	<div id="preload">
+		<div id="preload-content">
+			<div class="preload-spinner">
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+			<!-- Background Video -->
+			<div class="body-youtube overlay ">
+				<a id="bg-video" class="player" data-property="{videoURL:'https://youtu.be/N14wpKSQBFs',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, showControls:false, showYTLogo:false, vol:20, opacity:100.0}"></a>
+				<div id="slider"></div>
+			</div>
+			<nav id="player-nav">
+				<ul>
+					<li data-toggle="tooltip" data-placement="top" data-title="Play" data-trigger="hover"> 
+						<a onclick="$('#bg-video').playYTP()"><i class="fa fa-play"></i></a>
+					</li>
+					<li data-toggle="tooltip" data-placement="top" data-title="Pause" data-trigger="hover"> 
+						<a onclick="$('#bg-video').pauseYTP()"><i class="fa fa-pause"></i></a>
+					</li>
+					<li class="full-play" data-toggle="tooltip" data-placement="top" data-title="Fullscreen" data-trigger="hover"> 
+						<a class="expand-player" onclick="$('#bg-video').YTPFullscreen()"><i class="fa fa-expand"></i></a>
+					</li>
+					<li> 
+						<a data-toggle="tooltip" title="https://discord.gg/everestrp"><i class="fab fa-discord"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="backdrop"></div>
+	</body>
+    <!-- <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-73378277-10'); </script> -->
+    <audio id="leson" src="music/music.ogg" autoplay = "true" hidden="true" loop="true"/>
+		<script>
+
+
+    var myAudio = document.getElementById("leson");
+
+    myAudio.volume = 0.1;
+
+
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar
+                    if (myAudio.paused) {
+                        myAudio.play();
+                    } else {
+                        myAudio.pause();
+                    }
+                    break;
+            }
+      return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+	<!--Java Scripts-->
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mb.YTPlayer.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/typer.js"></script>
+	<script src="app.js"></script>
+
+
+
+
+</body>
+

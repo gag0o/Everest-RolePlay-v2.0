@@ -1,0 +1,401 @@
+html, body, p, button{
+	padding: 0;
+	margin: 0;
+}
+body.active{
+    background-color: rgba(0,0,0,0.5);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+@font-face {
+    font-family: vision-heavy;
+    src: url(media/font/Vision-Heavy.otf);
+}
+@font-face {
+    font-family: bariol;
+    src: url(media/font/Bariol_Regular.otf);
+}
+.container{
+	height: 600px;
+	width: 900px;
+	margin:auto;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "bariol", sans-serif;
+}
+.box-shadow{
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(224,224,224,0.5);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(224,224,224,0.5);
+	box-shadow: 0px 0px 40px 0px rgba(224,224,224,0.5);
+}
+.cont-content{
+	background: rgba(97, 96, 96, 0.123);
+	height: calc(100% - 179px);
+	width: calc(100% - 120px);
+    padding: 60px;
+    opacity: 0.7;
+}
+.cont-waiting{
+	background: rgba(97, 96, 96, 0.123);
+	height: 100%;
+	width: 100%;
+	position: relative;
+    overflow: hidden;
+    opacity: 0.7;
+}
+.flex{
+	display: flex;
+}
+/*######################################################*/
+/* ###############         Botões       ###############*/
+/*######################################################*/
+button{
+	cursor: pointer;
+	border: 0;
+}
+.btn{
+	width: 236px;
+	height: 77px;
+	font-family: "vision-heavy", sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: white;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	display: flex;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+.btn .icon{
+	line-height: 38px;
+    margin-right: 20px;
+}
+.btn span:last-child{
+	font-size: 15px;
+	font-family: "bariol", sans-serif;
+	text-transform: none;
+}
+.btn i{
+	position: absolute;
+    transform: rotate(10deg);
+    font-size: 130px;
+    left: -19%;
+    top: -34%;
+    opacity: 0.1;
+    transition-duration: 0.3s;
+}
+.btn-blue{
+	background: #000000;
+    box-shadow: 2px 2px  #ffffff;
+}
+
+.btn-blue:hover {
+    color: rgb(85, 83, 83);
+}
+
+.btn-violet {
+    background: #000000;
+    box-shadow: 2px 2px #ffffff;
+}
+
+.btn-violet:hover {
+    color: rgb(85, 83, 83);
+}
+.btn-orange {
+    background: #000000;
+    box-shadow: 2px 2px #ffffff;
+}
+
+.btn-orange:hover {
+    color: rgb(85, 83, 83);
+}
+.btn-green {
+    background: #000000;
+    box-shadow: 2px 5px #ffffff;
+}
+
+.btn-grey {
+    background: #000000;
+    box-shadow: 2px 5px;
+}
+
+.btn-grey:hover {
+    color: #fb9a2c;
+}
+.btn-grey span:last-child{
+	color: #333435;
+}
+.btn:hover i{
+	transform: rotate(0deg);
+	font-size: 150px;
+}
+/*######################################################*/
+/* ###############        TOP BAR        ###############*/
+/*######################################################*/
+.topbar{
+	background: #97969631;
+    height: 59px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+nav{
+	width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+.btn-sign-out{
+	color: white;
+	background: rgba(0,0,0,0);
+	font-size: 20px;
+	font-family: "bariol", sans-serif;
+}
+.btn-sign-out i{
+	font-size: 15px;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+}
+.btn-sign-out:hover i{
+	margin-left: 10px;
+}
+.logo-topbar{
+	height: 39px;
+    width: 140px;
+    background-image: url(media/img/logo-top.png);
+    background-repeat: no-repeat ;
+    margin-left: 380px;
+}
+
+.sessao {
+    position: absolute;
+    
+}
+/*######################################################*/
+/* ###############       Menu Principal       ###############*/
+/*######################################################*/
+.balance{
+	width: 403px;
+    height: 183px;
+    background: white;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    padding: 40px;
+    color: #000000;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 50px;
+}
+.balance .name{
+	font-size: 25px;
+	color: #000000;
+	margin-bottom: 5px;
+    display: block;
+}
+.balance .money{
+	font-size: 60px;
+	color: #000000;
+	font-family: "vision-heavy", sans-serif;
+}
+.balance .money .dollars{
+	color: #000000;
+}
+.list-btn{
+	height: 263px;
+	width: 236px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+/*######################################################*/
+/* ###############     Menu Depósito      ###############*/
+/*######################################################*/
+.banniere{
+	width: 464px;
+	margin-right: 60px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+	margin-top: 60px;
+}
+label{
+	margin-bottom: 10px;
+	font-size: 17px;
+	color: #414141;
+	font-family: "bariol", sans-serif;
+}
+.input-cont{
+	width: 720px;
+    height: 87px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+.input-cont input{
+	width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-family: "vision-heavy",sans-serif;
+}
+.input-cont input::-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+.double-input{
+	display: flex;
+	justify-content: space-between;
+}
+.double-input .input-cont{
+	width: 300px;
+}
+.double-input input{
+	font-size: 35px; 
+}
+/*######################################################*/
+/* ###############        Aguardando        ###############*/
+/*######################################################*/
+.bg-waiting{
+	width: 1000px;
+    height: 450px;
+    background: #000000;
+    position: relative;
+    transform: rotate(-8deg);
+    top: -70px;
+    left: -70px;
+}
+.mainlogo{
+	margin:auto;
+	width: 320px;
+    height: 95px;
+	background-image: url(media/img/logo-big.png);
+	background-repeat: no-repeat;
+	margin-top: 70px;
+}
+.content-waiting p{
+	margin-top: 70px;
+}
+.content-waiting{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+	width: 410px;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	margin-left: -205px;
+	font-size: 30px;
+	color: white;
+}
+.content-waiting span{
+	color: #ffffff;
+}
+#fingerprint-content{
+	position: relative;
+	margin:auto;
+	margin-top: 127px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border:4px solid #000000;
+	cursor: pointer;
+	overflow: hidden;
+	transition-duration: 0.2s;
+}
+#fingerprint-content:hover{
+	border: 4px solid rgb(255, 255, 255);
+}
+.fingerprint-default{
+	position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url(media/img/fingerprint.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition-duration: 1.2s;
+}
+.fingerprint-active{
+	position: absolute;
+    width: 120px;
+    height: 0px;
+    background-image: url(media/img/fingerprint.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition-duration: 1.2s;
+    bottom: 0;
+}
+.fingerprint-active.active{
+    height: 120px;
+}
+.fingerprint-bar{
+	width: 126px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #a5a5a5;
+    position: absolute;
+    bottom: -3px;
+    transition-duration: 1.2s;
+}
+.fingerprint-bar.active{
+    bottom: 123px;
+}
+.cont-p-5{
+	transform: rotate(-1deg);
+    position: absolute;
+    left: 830px;
+    top: 98px;
+}
+.cont-p-6{
+	transform: rotate(-1deg);
+    position: absolute;
+    left: -28px;
+    top: 366px;
+}
+.cont-p-7{
+	transform: rotate(-1deg);
+    position: absolute;
+    left: 272px;
+    top: 416px;
+}
+#result{
+    position: absolute;
+    top: 20px;
+    width: 820px;
+    padding: 25px 40px;
+    font-size: 16px;
+    color: white;
+}
+
+.alert-green{
+	background: #000000;
+}
+
+.alert-orange{
+	background: #e5873b;
+}
